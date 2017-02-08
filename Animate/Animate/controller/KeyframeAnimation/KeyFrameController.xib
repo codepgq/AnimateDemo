@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyFrameController" customModule="Animate" customModuleProvider="target">
+            <connections>
+                <outlet property="ImgView" destination="rxw-uH-5ej" id="Ivt-oh-iLy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDb-Mf-NWy">
+                    <rect key="frame" x="20" y="597" width="157.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="oW4-GP-Djm"/>
+                    </constraints>
+                    <state key="normal" title="矩形Path"/>
+                    <connections>
+                        <action selector="rectPath:" destination="-1" eventType="touchUpInside" id="lBq-7r-Dfv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8h-tH-ho0">
+                    <rect key="frame" x="197.5" y="597" width="157.5" height="40"/>
+                    <state key="normal" title="圆形Path"/>
+                    <connections>
+                        <action selector="circle:" destination="-1" eventType="touchUpInside" id="7dC-dS-1Wc"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="rxw-uH-5ej">
+                    <rect key="frame" x="137" y="283" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="AhT-5U-431"/>
+                        <constraint firstAttribute="height" constant="100" id="yhE-lE-tNm"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C8h-tH-ho0" secondAttribute="trailing" constant="20" id="6Q2-4K-Yxg"/>
+                <constraint firstItem="DDb-Mf-NWy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="GqY-ZS-UqD"/>
+                <constraint firstItem="C8h-tH-ho0" firstAttribute="centerY" secondItem="DDb-Mf-NWy" secondAttribute="centerY" id="U0i-hZ-m8k"/>
+                <constraint firstAttribute="bottom" secondItem="DDb-Mf-NWy" secondAttribute="bottom" constant="30" id="a2k-2x-pQv"/>
+                <constraint firstItem="C8h-tH-ho0" firstAttribute="height" secondItem="DDb-Mf-NWy" secondAttribute="height" id="f2J-qO-fM2"/>
+                <constraint firstItem="C8h-tH-ho0" firstAttribute="leading" secondItem="DDb-Mf-NWy" secondAttribute="trailing" constant="20" id="iCz-Ev-SCq"/>
+                <constraint firstItem="rxw-uH-5ej" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iYs-3L-m6F"/>
+                <constraint firstItem="C8h-tH-ho0" firstAttribute="leading" secondItem="DDb-Mf-NWy" secondAttribute="trailing" constant="20" id="tgU-PO-6BG"/>
+                <constraint firstItem="rxw-uH-5ej" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wEz-sH-tUz"/>
+                <constraint firstItem="C8h-tH-ho0" firstAttribute="width" secondItem="DDb-Mf-NWy" secondAttribute="width" id="zLm-i0-xUo"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="message" width="258" height="251"/>
+    </resources>
+</document>

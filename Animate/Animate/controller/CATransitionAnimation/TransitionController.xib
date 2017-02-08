@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransitionController" customModule="Animate" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="AgT-do-Oki" id="2u9-xk-FD1"/>
+                <outlet property="imgView" destination="dzf-cP-HWV" id="GdC-G0-vmD"/>
+                <outlet property="segment" destination="irt-TB-Jdc" id="q7l-Ud-4nE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="dzf-cP-HWV">
+                    <rect key="frame" x="87" y="71" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="9Cy-7n-IGP"/>
+                        <constraint firstAttribute="width" constant="200" id="dQY-Zh-CgQ"/>
+                    </constraints>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="irt-TB-Jdc">
+                    <rect key="frame" x="16" y="371" width="343" height="29"/>
+                    <segments>
+                        <segment title="Right"/>
+                        <segment title="Left"/>
+                        <segment title="Top"/>
+                        <segment title="Bottom"/>
+                    </segments>
+                    <connections>
+                        <action selector="segMentValueChange:" destination="-1" eventType="valueChanged" id="NBz-e3-Gyq"/>
+                    </connections>
+                </segmentedControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AgT-do-Oki">
+                    <rect key="frame" x="16" y="407" width="343" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rDt-0q-dhu">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dzf-cP-HWV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="0EK-to-jYv"/>
+                <constraint firstAttribute="trailing" secondItem="AgT-do-Oki" secondAttribute="trailing" constant="16" id="CyC-dS-OQp"/>
+                <constraint firstItem="AgT-do-Oki" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="E6O-lz-cI3"/>
+                <constraint firstItem="dzf-cP-HWV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qvp-17-Se0"/>
+                <constraint firstItem="irt-TB-Jdc" firstAttribute="top" secondItem="dzf-cP-HWV" secondAttribute="bottom" constant="100" id="SM3-vT-egn"/>
+                <constraint firstAttribute="trailing" secondItem="irt-TB-Jdc" secondAttribute="trailing" constant="16" id="gZU-mq-E2b"/>
+                <constraint firstItem="AgT-do-Oki" firstAttribute="top" secondItem="irt-TB-Jdc" secondAttribute="bottom" constant="8" id="jHt-6f-QhJ"/>
+                <constraint firstAttribute="bottom" secondItem="AgT-do-Oki" secondAttribute="bottom" constant="20" id="la2-0M-jD6"/>
+                <constraint firstItem="irt-TB-Jdc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="qiG-A0-Vo7"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon1" width="200" height="200"/>
+    </resources>
+</document>

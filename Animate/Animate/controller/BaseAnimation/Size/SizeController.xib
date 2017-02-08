@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SizeController" customModule="Animate" customModuleProvider="target">
+            <connections>
+                <outlet property="boundsImg" destination="Pzh-ag-8pj" id="1ik-Ty-Bdm"/>
+                <outlet property="contentH" destination="2oy-z4-2ge" id="FJm-dL-5aG"/>
+                <outlet property="contentsW" destination="gKa-1G-mXM" id="I1l-CJ-nya"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="Pzh-ag-8pj">
+                    <rect key="frame" x="147.5" y="84" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="LZi-VY-J26"/>
+                        <constraint firstAttribute="width" constant="80" id="sta-Ot-t4F"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="gKa-1G-mXM">
+                    <rect key="frame" x="147" y="204" width="80" height="80"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon2" translatesAutoresizingMaskIntoConstraints="NO" id="2oy-z4-2ge">
+                    <rect key="frame" x="147" y="324" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4EU-5P-ttG"/>
+                        <constraint firstAttribute="height" constant="80" id="Siy-YV-cS0"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gKa-1G-mXM" firstAttribute="top" secondItem="Pzh-ag-8pj" secondAttribute="bottom" constant="40" id="4gN-Uh-yT6"/>
+                <constraint firstItem="Pzh-ag-8pj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="580-4j-PYA"/>
+                <constraint firstItem="2oy-z4-2ge" firstAttribute="centerX" secondItem="Pzh-ag-8pj" secondAttribute="centerX" id="6tO-Aa-K9m"/>
+                <constraint firstItem="gKa-1G-mXM" firstAttribute="width" secondItem="Pzh-ag-8pj" secondAttribute="width" id="7qZ-4H-ozG"/>
+                <constraint firstItem="Pzh-ag-8pj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="H85-GG-Bmo"/>
+                <constraint firstItem="2oy-z4-2ge" firstAttribute="top" secondItem="gKa-1G-mXM" secondAttribute="bottom" constant="40" id="ahF-BV-2ge"/>
+                <constraint firstItem="2oy-z4-2ge" firstAttribute="height" secondItem="Pzh-ag-8pj" secondAttribute="height" id="b4b-Ry-l9D"/>
+                <constraint firstItem="2oy-z4-2ge" firstAttribute="width" secondItem="Pzh-ag-8pj" secondAttribute="width" id="byv-a7-MCe"/>
+                <constraint firstItem="gKa-1G-mXM" firstAttribute="height" secondItem="Pzh-ag-8pj" secondAttribute="height" id="kwr-e6-Sfp"/>
+                <constraint firstItem="gKa-1G-mXM" firstAttribute="centerX" secondItem="Pzh-ag-8pj" secondAttribute="centerX" id="tCD-wb-SEK"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon1" width="200" height="200"/>
+        <image name="icon2" width="200" height="200"/>
+        <image name="timg" width="1001" height="987"/>
+    </resources>
+</document>
