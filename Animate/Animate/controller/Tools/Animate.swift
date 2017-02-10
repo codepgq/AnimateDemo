@@ -73,7 +73,7 @@ class Animate: NSObject {
         
     }
     
-    class func keyFrameAnimationWithPath(_ keyPath : String , values : [Any]? , keyTimes : [NSNumber]? , path : CGPath? , duration : CFTimeInterval , cacluationMode : String , rotationMode : String?) -> CAKeyframeAnimation{
+    class func keyFrameAnimationWithKeyPath(_ keyPath : String , values : [Any]? , keyTimes : [NSNumber]? , path : CGPath? , duration : CFTimeInterval , cacluationMode : String , rotationMode : String?) -> CAKeyframeAnimation{
         
         let keyFrame = CAKeyframeAnimation(keyPath: keyPath)
         
@@ -113,7 +113,7 @@ class Animate: NSObject {
         
     }
     
-    class func transitionAnimationWith(_ duration : CFTimeInterval, type : String , subtype : String? , startProgress : Float , endProgress : Float) -> CATransition{
+    class func transitionAnimationWith(duration : CFTimeInterval, type : String , subtype : String? , startProgress : Float , endProgress : Float) -> CATransition{
         let transitionAni = CATransition()
         
         //转场类型
@@ -137,5 +137,33 @@ class Animate: NSObject {
         transitionAni.duration = duration
         
         return transitionAni
+    }
+    
+    class func springAnimationWithPath(_ path : String , mass : CGFloat , stiffness : CGFloat , damping : CGFloat , fromValue : Any? , toValue : Any) -> CASpringAnimation{
+        let springAni = CASpringAnimation(keyPath: path)
+        
+        //质量：影响图层运动时的弹簧惯性，质量越大，弹簧的拉伸和压缩的幅度越大，动画的速度变慢，且波动幅度变大
+        springAni.mass = mass
+        
+        //刚度：越大动画越快
+        springAni.stiffness = stiffness
+        
+        //阻尼：越大停止越快
+        springAni.damping = damping
+        
+        //初始速率
+        springAni.initialVelocity = 0
+        
+        //初始值
+        springAni.fromValue = fromValue
+        
+        //结束值
+        springAni.toValue = toValue
+        
+        print("动画停止预估时间" + "\(springAni.settlingDuration)")
+        
+        springAni.duration = springAni.settlingDuration
+        
+        return springAni
     }
 }

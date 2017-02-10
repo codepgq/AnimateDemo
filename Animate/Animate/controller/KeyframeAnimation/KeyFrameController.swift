@@ -87,7 +87,7 @@ class KeyFrameController: UIViewController {
                         NSNumber(value: 1.0)]
         
         //线性 kCAAnimationLinear linear
-        let keyFrameAni = Animate.keyFrameAnimationWithPath("position", values: values, keyTimes: keyTimes, path: nil, duration: 4, cacluationMode: kCAAnimationLinear, rotationMode: "auto")
+        let keyFrameAni = Animate.keyFrameAnimationWithKeyPath("position", values: values, keyTimes: keyTimes, path: nil, duration: 4, cacluationMode: kCAAnimationLinear, rotationMode: "auto")
         
         //跳跃的形式 kCAAnimationDiscrete discrete
 //        let keyFrameAni = Animate.keyFrameAnimationWithPath("position", values: values, keyTimes: keyTimes, path: nil, duration: 4, cacluationMode: kCAAnimationDiscrete, rotationMode: "auto")
@@ -108,7 +108,7 @@ class KeyFrameController: UIViewController {
         ImgView.layer.removeAllAnimations()
         
         
-        let keyFrameAni = Animate.keyFrameAnimationWithPath("position", values: nil, keyTimes: nil, path: circlePath, duration: 4, cacluationMode: kCAAnimationCubicPaced, rotationMode: "auto")
+        let keyFrameAni = Animate.keyFrameAnimationWithKeyPath("position", values: nil, keyTimes: nil, path: circlePath, duration: 4, cacluationMode: kCAAnimationCubicPaced, rotationMode: "auto")
         keyFrameAni.repeatCount = Float.infinity
         
         ImgView.layer.add(keyFrameAni, forKey: "circleAnimation")

@@ -15,10 +15,10 @@ class ScaleController: UIViewController {
     @IBOutlet weak var imgView3: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        startAnimate()
+        startAnimation()
     }
     
-    func startAnimate(){
+    func startAnimation(){
         
         //Scale
         let scaleAnimate = Animate.baseAnimationWithKeyPath("transform.scale", fromValue: nil, toValue: 1.2, duration: 1.5, repeatCount: Float.infinity, timingFunction: nil)

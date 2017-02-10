@@ -42,7 +42,7 @@ class TransitionController: UIViewController {
         
         let derectionStr = derection[segment.selectedSegmentIndex]
         
-        let transitionAni = Animate.transitionAnimationWith(0.75, type: type, subtype: derectionStr, startProgress: 0, endProgress: 1)
+        let transitionAni = Animate.transitionAnimationWith(duration: 0.75, type: type, subtype: derectionStr, startProgress: 0, endProgress: 1)
         imgView.image = UIImage(named: imgNamed)
         
         imgView.layer.add(transitionAni, forKey: "transition")

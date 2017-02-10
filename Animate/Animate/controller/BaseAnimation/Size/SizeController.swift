@@ -15,10 +15,10 @@ class SizeController: UIViewController {
     @IBOutlet weak var contentH: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        startAnimate()
+        startAnimation()
     }
     
-    func startAnimate(){
+    func startAnimation(){
         //bounds
         let boundsAnimate = Animate.baseAnimationWithKeyPath("bounds", fromValue: nil, toValue: NSValue(cgRect: CGRect(x: 0, y: 0, width: 50, height: 50)), duration: 0.75, repeatCount: Float.infinity, timingFunction: nil)
         boundsAnimate.autoreverses = true

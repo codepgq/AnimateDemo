@@ -21,13 +21,13 @@ class BaseViewController: UIViewController {
     }
     
     func viewTransformY(_ y : Float){
-        UIView.animate(withDuration: 0.25) {
+        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.view.transform = CGAffineTransform(translationX: 0, y: CGFloat(y))
-        }
+        }, completion: nil)
     }
     
     func hideKeyboard(){
-        view.endEditing(true)
+        self.view.endEditing(true)
         viewTransformY(0)
     }
     

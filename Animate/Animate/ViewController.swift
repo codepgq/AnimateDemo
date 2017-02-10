@@ -11,8 +11,8 @@ let identifierKey = "identifierKey"
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    let datas : [[String]] = [["Rotation","Position","Change","Scale","Size"],["KeyFrame"],["Transition"]]
-    let titles : [String] = ["CABaseAnimation","CAKeyframeAnimation","TransitionAnimation"]
+    let datas : [[String]] = [["Rotation","Position","Change","Scale","Size"],["KeyFrame"],["Transition"],["Spring"],["Group"],["DrawLine","WaveLine","Fire","FireTwo","Login"]]
+    let titles : [String] = ["CABaseAnimation","CAKeyframeAnimation","TransitionAnimation","SpringAnimation","GroupAnimation","综合实例"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

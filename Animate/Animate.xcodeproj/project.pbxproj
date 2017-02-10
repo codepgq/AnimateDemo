@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B8EF71E4C07F9009EF037 /* FireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8EF61E4C07F9009EF037 /* FireController.swift */; };
+		045B8EFA1E4C1BEB009EF037 /* FireTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8EF81E4C1BEB009EF037 /* FireTwoController.swift */; };
+		045B8EFB1E4C1BEB009EF037 /* FireTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B8EF91E4C1BEB009EF037 /* FireTwoController.xib */; };
+		045B8EFF1E4C39E8009EF037 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8EFD1E4C39E8009EF037 /* LoginController.swift */; };
+		045B8F001E4C39E8009EF037 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B8EFE1E4C39E8009EF037 /* LoginController.xib */; };
+		045B8F021E4C49DD009EF037 /* PQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8F011E4C49DD009EF037 /* PQButton.swift */; };
 		045CE0181E495D0F002516CE /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0171E495D0F002516CE /* Animate.swift */; };
 		045CE03A1E49B2B3002516CE /* ChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE02C1E49B2B3002516CE /* ChangeController.swift */; };
 		045CE03B1E49B2B3002516CE /* ChangeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045CE02D1E49B2B3002516CE /* ChangeController.xib */; };
@@ -28,9 +34,22 @@
 		047CA7AD1E485FD3009751E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CA7AC1E485FD3009751E5 /* BaseViewController.swift */; };
 		047EFDD81E4ACB4B001A3C24 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDD61E4ACB4B001A3C24 /* TransitionController.swift */; };
 		047EFDD91E4ACB4B001A3C24 /* TransitionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047EFDD71E4ACB4B001A3C24 /* TransitionController.xib */; };
+		047EFDDF1E4AF6DF001A3C24 /* SpringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDDD1E4AF6DF001A3C24 /* SpringController.swift */; };
+		047EFDE01E4AF6DF001A3C24 /* SpringController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047EFDDE1E4AF6DF001A3C24 /* SpringController.xib */; };
+		047EFDE41E4B04CF001A3C24 /* GroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDE21E4B04CF001A3C24 /* GroupController.swift */; };
+		047EFDE51E4B04CF001A3C24 /* GroupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047EFDE31E4B04CF001A3C24 /* GroupController.xib */; };
+		047EFDEB1E4B1A57001A3C24 /* DrawLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDEA1E4B1A57001A3C24 /* DrawLineController.swift */; };
+		047EFDEE1E4B1A8B001A3C24 /* WaveLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDEC1E4B1A8B001A3C24 /* WaveLineController.swift */; };
+		047EFDF11E4B2148001A3C24 /* WaveLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDF01E4B2148001A3C24 /* WaveLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045B8EF61E4C07F9009EF037 /* FireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireController.swift; sourceTree = "<group>"; };
+		045B8EF81E4C1BEB009EF037 /* FireTwoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireTwoController.swift; sourceTree = "<group>"; };
+		045B8EF91E4C1BEB009EF037 /* FireTwoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FireTwoController.xib; sourceTree = "<group>"; };
+		045B8EFD1E4C39E8009EF037 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		045B8EFE1E4C39E8009EF037 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		045B8F011E4C49DD009EF037 /* PQButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQButton.swift; sourceTree = "<group>"; };
 		045CE0171E495D0F002516CE /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		045CE02C1E49B2B3002516CE /* ChangeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeController.swift; sourceTree = "<group>"; };
 		045CE02D1E49B2B3002516CE /* ChangeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeController.xib; sourceTree = "<group>"; };
@@ -54,6 +73,13 @@
 		047CA7AC1E485FD3009751E5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		047EFDD61E4ACB4B001A3C24 /* TransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
 		047EFDD71E4ACB4B001A3C24 /* TransitionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransitionController.xib; sourceTree = "<group>"; };
+		047EFDDD1E4AF6DF001A3C24 /* SpringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringController.swift; sourceTree = "<group>"; };
+		047EFDDE1E4AF6DF001A3C24 /* SpringController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpringController.xib; sourceTree = "<group>"; };
+		047EFDE21E4B04CF001A3C24 /* GroupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupController.swift; sourceTree = "<group>"; };
+		047EFDE31E4B04CF001A3C24 /* GroupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupController.xib; sourceTree = "<group>"; };
+		047EFDEA1E4B1A57001A3C24 /* DrawLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLineController.swift; sourceTree = "<group>"; };
+		047EFDEC1E4B1A8B001A3C24 /* WaveLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveLineController.swift; sourceTree = "<group>"; };
+		047EFDF01E4B2148001A3C24 /* WaveLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045B8EF51E4C02BD009EF037 /* 火苗 */ = {
+			isa = PBXGroup;
+			children = (
+				045B8EF61E4C07F9009EF037 /* FireController.swift */,
+				045B8EF81E4C1BEB009EF037 /* FireTwoController.swift */,
+				045B8EF91E4C1BEB009EF037 /* FireTwoController.xib */,
+			);
+			path = "火苗";
+			sourceTree = "<group>";
+		};
+		045B8EFC1E4C39D6009EF037 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				045B8EFD1E4C39E8009EF037 /* LoginController.swift */,
+				045B8EFE1E4C39E8009EF037 /* LoginController.xib */,
+				045B8F011E4C49DD009EF037 /* PQButton.swift */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
 		045CE0161E495CEC002516CE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +220,9 @@
 		047CA7A01E485488009751E5 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				047EFDE71E4B19E1001A3C24 /* 综合实例 */,
+				047EFDE11E4B04BB001A3C24 /* CaAnimationGroup */,
+				047EFDDA1E4AF6A1001A3C24 /* SpringAnimation */,
 				047EFDD51E4ABBFD001A3C24 /* CATransitionAnimation */,
 				045CE0441E49B2ED002516CE /* KeyframeAnimation */,
 				045CE02A1E49B2B3002516CE /* BaseAnimation */,
@@ -190,6 +239,52 @@
 				047EFDD71E4ACB4B001A3C24 /* TransitionController.xib */,
 			);
 			path = CATransitionAnimation;
+			sourceTree = "<group>";
+		};
+		047EFDDA1E4AF6A1001A3C24 /* SpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				047EFDDD1E4AF6DF001A3C24 /* SpringController.swift */,
+				047EFDDE1E4AF6DF001A3C24 /* SpringController.xib */,
+			);
+			path = SpringAnimation;
+			sourceTree = "<group>";
+		};
+		047EFDE11E4B04BB001A3C24 /* CaAnimationGroup */ = {
+			isa = PBXGroup;
+			children = (
+				047EFDE21E4B04CF001A3C24 /* GroupController.swift */,
+				047EFDE31E4B04CF001A3C24 /* GroupController.xib */,
+			);
+			path = CaAnimationGroup;
+			sourceTree = "<group>";
+		};
+		047EFDE71E4B19E1001A3C24 /* 综合实例 */ = {
+			isa = PBXGroup;
+			children = (
+				045B8EFC1E4C39D6009EF037 /* 登录 */,
+				045B8EF51E4C02BD009EF037 /* 火苗 */,
+				047EFDE81E4B1A29001A3C24 /* 波浪效果 */,
+				047EFDE91E4B1A29001A3C24 /* 画线 */,
+			);
+			path = "综合实例";
+			sourceTree = "<group>";
+		};
+		047EFDE81E4B1A29001A3C24 /* 波浪效果 */ = {
+			isa = PBXGroup;
+			children = (
+				047EFDEC1E4B1A8B001A3C24 /* WaveLineController.swift */,
+				047EFDF01E4B2148001A3C24 /* WaveLineView.swift */,
+			);
+			path = "波浪效果";
+			sourceTree = "<group>";
+		};
+		047EFDE91E4B1A29001A3C24 /* 画线 */ = {
+			isa = PBXGroup;
+			children = (
+				047EFDEA1E4B1A57001A3C24 /* DrawLineController.swift */,
+			);
+			path = "画线";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +350,14 @@
 				047CA7991E485447009751E5 /* LaunchScreen.storyboard in Resources */,
 				045CE03F1E49B2B3002516CE /* RotationController.xib in Resources */,
 				045CE0481E49B34B002516CE /* KeyFrameController.xib in Resources */,
+				045B8F001E4C39E8009EF037 /* LoginController.xib in Resources */,
 				045CE0431E49B2B3002516CE /* SizeController.xib in Resources */,
 				045CE0411E49B2B3002516CE /* ScaleController.xib in Resources */,
+				047EFDE51E4B04CF001A3C24 /* GroupController.xib in Resources */,
 				047CA7961E485447009751E5 /* Assets.xcassets in Resources */,
+				047EFDE01E4AF6DF001A3C24 /* SpringController.xib in Resources */,
 				045CE03D1E49B2B3002516CE /* PositionController.xib in Resources */,
+				045B8EFB1E4C1BEB009EF037 /* FireTwoController.xib in Resources */,
 				047CA7941E485447009751E5 /* Main.storyboard in Resources */,
 				047EFDD91E4ACB4B001A3C24 /* TransitionController.xib in Resources */,
 				045CE03B1E49B2B3002516CE /* ChangeController.xib in Resources */,
@@ -272,16 +371,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045B8EFF1E4C39E8009EF037 /* LoginController.swift in Sources */,
 				045CE03C1E49B2B3002516CE /* PositionController.swift in Sources */,
+				047EFDE41E4B04CF001A3C24 /* GroupController.swift in Sources */,
 				047CA7911E485447009751E5 /* ViewController.swift in Sources */,
+				047EFDF11E4B2148001A3C24 /* WaveLineView.swift in Sources */,
 				045CE03E1E49B2B3002516CE /* RotationController.swift in Sources */,
 				047CA7AD1E485FD3009751E5 /* BaseViewController.swift in Sources */,
+				047EFDEE1E4B1A8B001A3C24 /* WaveLineController.swift in Sources */,
+				047EFDDF1E4AF6DF001A3C24 /* SpringController.swift in Sources */,
 				045CE0401E49B2B3002516CE /* ScaleController.swift in Sources */,
 				047EFDD81E4ACB4B001A3C24 /* TransitionController.swift in Sources */,
+				045B8EFA1E4C1BEB009EF037 /* FireTwoController.swift in Sources */,
+				045B8EF71E4C07F9009EF037 /* FireController.swift in Sources */,
 				045CE0471E49B34B002516CE /* KeyFrameController.swift in Sources */,
 				047CA78F1E485447009751E5 /* AppDelegate.swift in Sources */,
 				045CE03A1E49B2B3002516CE /* ChangeController.swift in Sources */,
+				047EFDEB1E4B1A57001A3C24 /* DrawLineController.swift in Sources */,
 				045CE0181E495D0F002516CE /* Animate.swift in Sources */,
+				045B8F021E4C49DD009EF037 /* PQButton.swift in Sources */,
 				045CE0421E49B2B3002516CE /* SizeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
