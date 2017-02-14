@@ -16,12 +16,16 @@ class BaseViewController: UIViewController {
     }
     
     func keyboardShow(noti : Notification){
-        let rect : CGRect = (noti.userInfo! as! [String : Any])[UIKeyboardFrameBeginUserInfoKey] as! CGRect
+//        let rect : CGRect = (noti.userInfo! as! [String : Any])[UIKeyboardFrameBeginUserInfoKey] as! CGRect
+//        viewTransformY(-(Float)(rect.size.height))
+        
+        let dict = (noti.userInfo as! [String : Any])
+        let rect = (dict[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         viewTransformY(-(Float)(rect.size.height))
     }
     
     func viewTransformY(_ y : Float){
-        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.view.transform = CGAffineTransform(translationX: 0, y: CGFloat(y))
         }, completion: nil)
     }
