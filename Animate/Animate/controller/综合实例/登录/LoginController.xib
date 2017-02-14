@@ -21,9 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bizhi" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Cb-YmD">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bizhi" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Cb-YmD">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lM-7s-7vP">
                     <rect key="frame" x="20" y="452" width="335" height="40"/>
@@ -77,6 +76,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="GFT-Cb-YmD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0cv-4k-G8v"/>
                 <constraint firstItem="oLN-kM-pZ9" firstAttribute="centerX" secondItem="pIE-mK-8Ec" secondAttribute="centerX" id="1Ta-Bb-pFg"/>
                 <constraint firstAttribute="trailing" secondItem="Ylm-dl-1pD" secondAttribute="trailing" constant="40" id="45d-Ux-Toi"/>
                 <constraint firstItem="oLN-kM-pZ9" firstAttribute="top" secondItem="Vtx-7c-xWB" secondAttribute="bottom" constant="9" id="4r1-gv-IMA"/>
@@ -84,14 +84,17 @@
                 <constraint firstItem="2lM-7s-7vP" firstAttribute="top" secondItem="aD9-Dx-Z0d" secondAttribute="bottom" constant="21" id="5O5-wm-21N"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="centerX" secondItem="2lM-7s-7vP" secondAttribute="centerX" id="BDS-4p-RmI"/>
                 <constraint firstAttribute="bottom" secondItem="2lM-7s-7vP" secondAttribute="bottom" constant="175" id="EUi-no-Twl"/>
+                <constraint firstAttribute="bottom" secondItem="GFT-Cb-YmD" secondAttribute="bottom" id="GI7-YU-vDD"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="width" secondItem="2lM-7s-7vP" secondAttribute="width" id="HPR-EW-Rcb"/>
                 <constraint firstAttribute="trailing" secondItem="2lM-7s-7vP" secondAttribute="trailing" constant="20" id="I7H-k1-91b"/>
+                <constraint firstItem="GFT-Cb-YmD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IZA-CG-8h0"/>
                 <constraint firstItem="Ylm-dl-1pD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="J2w-DI-Gpg"/>
                 <constraint firstItem="pIE-mK-8Ec" firstAttribute="width" secondItem="2lM-7s-7vP" secondAttribute="width" id="KJT-Ve-M7b"/>
                 <constraint firstItem="oLN-kM-pZ9" firstAttribute="width" secondItem="pIE-mK-8Ec" secondAttribute="width" id="PeE-e0-mdI"/>
                 <constraint firstItem="pIE-mK-8Ec" firstAttribute="top" secondItem="2lM-7s-7vP" secondAttribute="bottom" constant="8" id="SQn-4Z-WBn"/>
                 <constraint firstAttribute="bottom" secondItem="Ylm-dl-1pD" secondAttribute="bottom" constant="10" id="Spe-vm-SRf"/>
                 <constraint firstItem="oLN-kM-pZ9" firstAttribute="height" secondItem="pIE-mK-8Ec" secondAttribute="height" id="ZT0-xu-h8K"/>
+                <constraint firstAttribute="trailing" secondItem="GFT-Cb-YmD" secondAttribute="trailing" id="brq-ge-pXr"/>
                 <constraint firstItem="pIE-mK-8Ec" firstAttribute="centerX" secondItem="2lM-7s-7vP" secondAttribute="centerX" id="dSH-pk-zB7"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="height" secondItem="2lM-7s-7vP" secondAttribute="height" id="hED-JU-hbJ"/>
                 <constraint firstItem="aD9-Dx-Z0d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hFn-Lx-GVZ"/>
