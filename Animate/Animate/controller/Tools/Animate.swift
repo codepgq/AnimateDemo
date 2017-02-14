@@ -38,20 +38,11 @@ class Animate: NSObject {
         
         //设置动画的速度变化
         /*
-         @available(iOS 2.0, *)
-         public let kCAMediaTimingFunctionLinear: String        匀速
-         
-         @available(iOS 2.0, *)
-         public let kCAMediaTimingFunctionEaseIn: String        先慢后快
-         
-         @available(iOS 2.0, *)
-         public let kCAMediaTimingFunctionEaseOut: String       先快后慢
-         
-         @available(iOS 2.0, *)
-         public let kCAMediaTimingFunctionEaseInEaseOut: String 两头慢，中间快
-         
-         @available(iOS 3.0, *)
-         public let kCAMediaTimingFunctionDefault: String       默认效果和上面一个效果极为类似，不易区分
+        kCAMediaTimingFunctionLinear: String        匀速
+        kCAMediaTimingFunctionEaseIn: String        先慢后快
+        kCAMediaTimingFunctionEaseOut: String       先快后慢
+        kCAMediaTimingFunctionEaseInEaseOut: String 两头慢，中间快
+        kCAMediaTimingFunctionDefault: String       默认效果和上面一个效果极为类似，不易区分
          */
         
         animate.timingFunction = CAMediaTimingFunction(name: timingFunction ?? kCAMediaTimingFunctionEaseInEaseOut)
@@ -89,7 +80,7 @@ class Animate: NSObject {
          `linear',   线性插值
          `paced',    节奏动画，自动计算动画的运动时间，是的动画均匀运行，而不是根据keyTimes的值进行动画，设置这个模式keyTimes和timingFunctions无效
          `cubic'      对关键帧为坐标点的关键帧进行圆滑曲线相连后插值计算，需要设置timingFunctions。还可以通过tensionValues，continueityValues，biasValues来进行调整自定义
-         `cubicPaced'
+         `cubicPaced' 结合了paced和cubic动画效果
          */
         keyFrame.calculationMode = cacluationMode
         
@@ -125,7 +116,7 @@ class Animate: NSObject {
          kCATransitionFromLeft      从左边转场
          kCATransitionFromRight     从右边转场
          */
-        transitionAni.subtype = subtype
+        transitionAni.subtype = subtype ?? kCATransitionFromLeft
         
         //动画开始的进度
         transitionAni.startProgress = startProgress
@@ -167,3 +158,39 @@ class Animate: NSObject {
         return springAni
     }
 }
+
+/*
+ CATransform3D Key Paths : (example)transform.rotation.z
+    rotation.x
+    rotation.y
+    rotation.z
+    rotation
+    scale.x
+    scale.y
+    scale.z
+    scale
+    translation.x
+    translation.y
+    translation.z
+    translation
+ CGPoint Key Paths : (example)position.x
+    x
+    y
+ CGRect Key Paths : (example)bounds.size.width
+    origin.x
+    origin.y
+    origin
+    size.width
+    size.height
+    size
+    opacity
+    backgroundColor
+    cornerRadius
+    borderWidth
+    contents
+ Shadow Key Path:
+    shadowColor
+    shadowOffset
+    shadowOpacity
+    shadowRadius
+ */

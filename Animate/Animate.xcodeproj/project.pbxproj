@@ -41,6 +41,9 @@
 		047EFDEB1E4B1A57001A3C24 /* DrawLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDEA1E4B1A57001A3C24 /* DrawLineController.swift */; };
 		047EFDEE1E4B1A8B001A3C24 /* WaveLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDEC1E4B1A8B001A3C24 /* WaveLineController.swift */; };
 		047EFDF11E4B2148001A3C24 /* WaveLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EFDF01E4B2148001A3C24 /* WaveLineView.swift */; };
+		04855A021E51483B005CB05B /* LoginSuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04855A011E51483B005CB05B /* LoginSuccessController.swift */; };
+		04855A041E51494A005CB05B /* PQTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04855A031E51494A005CB05B /* PQTransition.swift */; };
+		04855A061E515417005CB05B /* ScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04855A051E515417005CB05B /* ScreenShot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		047EFDEA1E4B1A57001A3C24 /* DrawLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLineController.swift; sourceTree = "<group>"; };
 		047EFDEC1E4B1A8B001A3C24 /* WaveLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveLineController.swift; sourceTree = "<group>"; };
 		047EFDF01E4B2148001A3C24 /* WaveLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveLineView.swift; sourceTree = "<group>"; };
+		04855A011E51483B005CB05B /* LoginSuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSuccessController.swift; sourceTree = "<group>"; };
+		04855A031E51494A005CB05B /* PQTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PQTransition.swift; sourceTree = "<group>"; };
+		04855A051E515417005CB05B /* ScreenShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenShot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 				045B8EFD1E4C39E8009EF037 /* LoginController.swift */,
 				045B8EFE1E4C39E8009EF037 /* LoginController.xib */,
 				045B8F011E4C49DD009EF037 /* PQButton.swift */,
+				04855A011E51483B005CB05B /* LoginSuccessController.swift */,
+				04855A031E51494A005CB05B /* PQTransition.swift */,
 			);
 			path = "登录";
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				045CE0171E495D0F002516CE /* Animate.swift */,
+				04855A051E515417005CB05B /* ScreenShot.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -374,6 +383,7 @@
 				045B8EFF1E4C39E8009EF037 /* LoginController.swift in Sources */,
 				045CE03C1E49B2B3002516CE /* PositionController.swift in Sources */,
 				047EFDE41E4B04CF001A3C24 /* GroupController.swift in Sources */,
+				04855A041E51494A005CB05B /* PQTransition.swift in Sources */,
 				047CA7911E485447009751E5 /* ViewController.swift in Sources */,
 				047EFDF11E4B2148001A3C24 /* WaveLineView.swift in Sources */,
 				045CE03E1E49B2B3002516CE /* RotationController.swift in Sources */,
@@ -381,6 +391,7 @@
 				047EFDEE1E4B1A8B001A3C24 /* WaveLineController.swift in Sources */,
 				047EFDDF1E4AF6DF001A3C24 /* SpringController.swift in Sources */,
 				045CE0401E49B2B3002516CE /* ScaleController.swift in Sources */,
+				04855A061E515417005CB05B /* ScreenShot.swift in Sources */,
 				047EFDD81E4ACB4B001A3C24 /* TransitionController.swift in Sources */,
 				045B8EFA1E4C1BEB009EF037 /* FireTwoController.swift in Sources */,
 				045B8EF71E4C07F9009EF037 /* FireController.swift in Sources */,
@@ -388,6 +399,7 @@
 				047CA78F1E485447009751E5 /* AppDelegate.swift in Sources */,
 				045CE03A1E49B2B3002516CE /* ChangeController.swift in Sources */,
 				047EFDEB1E4B1A57001A3C24 /* DrawLineController.swift in Sources */,
+				04855A021E51483B005CB05B /* LoginSuccessController.swift in Sources */,
 				045CE0181E495D0F002516CE /* Animate.swift in Sources */,
 				045B8F021E4C49DD009EF037 /* PQButton.swift in Sources */,
 				045CE0421E49B2B3002516CE /* SizeController.swift in Sources */,

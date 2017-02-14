@@ -22,25 +22,34 @@ class LoginController: BaseViewController {
         button.touchUpInSideEvent { (button) in
             print("点击了我")
             
-            //模仿登录失败
+            //模仿登录失败/成功
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: { 
-                self.button.isStopLoginingAni = true
+//                button.isStopLoginingAni = true
+                let controller = LoginSuccessController()
+                controller.transition.animationType = PQTransitionType(rawValue: self.animationType)!
+                self.present(controller, animated: true, completion: nil)
             })
         }
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        button.isStopLoginingAni = true
+    }
 
     @objc fileprivate func chageBackImg(){
-        //rippleEffect  rippleEffect                    
+        //rippleEffect rippleEffect
         let transitionAni = Animate.transitionAnimationWith(duration: 1.25, type: "rippleEffect", subtype: nil, startProgress: 0, endProgress: 1)
         backImageView.image = UIImage(named: imgNamed)
         backImageView.layer.add(transitionAni, forKey: "rippleEffect")
         
         imgNamed = (imgNamed == "bizhi") ? "bizhi2" : "bizhi"
     }
-
-    @IBAction func loginBtn(_ sender: UIButton) {
-        
+    
+    lazy var animationType : Int = 0
+    @IBAction func chioseAnimationType(_ sender: UISegmentedControl) {
+        animationType = sender.selectedSegmentIndex
     }
     
     

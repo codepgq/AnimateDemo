@@ -33,6 +33,11 @@ class PQButton: UIButton {
     let ani1 = "ani1PathAnimation"
     let ani2 = "ani2PathAnimation"
     let ani3 = "ani3PathAnimation"
+    
+    let ani1Duration : Double = 0.35
+    let ani2Duration : Double = 0.4
+    let ani3Duration : Double = 0.25
+    
     //定义一个block回调
     typealias PQButtonClickBlock = ( (_ button :PQButton) -> () )
     
@@ -63,7 +68,7 @@ class PQButton: UIButton {
     fileprivate func addAnimation1(){
         layer.addSublayer(aniLayer1)
         //动画一
-        let ani1Path = Animate.baseAnimationWithKeyPath("path", fromValue: drawPathSize(CGSize(width: 0 , height: 0) , cornerRadius: 0), toValue: drawPathSize(CGSize(width: 30 , height: 30) , cornerRadius: 15), duration: 0.75, repeatCount: 0, timingFunction: kCAMediaTimingFunctionEaseOut)
+        let ani1Path = Animate.baseAnimationWithKeyPath("path", fromValue: drawPathSize(CGSize(width: 0 , height: 0) , cornerRadius: 0), toValue: drawPathSize(CGSize(width: 30 , height: 30) , cornerRadius: 15), duration: ani1Duration, repeatCount: 0, timingFunction: kCAMediaTimingFunctionEaseOut)
         ani1Path.delegate = self
         ani1Path.isRemovedOnCompletion = false
         
@@ -74,13 +79,13 @@ class PQButton: UIButton {
         layer.addSublayer(aniLayer2)
         
         //动画二 - 路径
-        let ani2Path = Animate.baseAnimationWithKeyPath("path", fromValue: drawPathSize(CGSize(width: 30 , height: 30) ,cornerRadius: 15), toValue: drawPathSize(CGSize(width: 60 , height: 60) ,cornerRadius: 30), duration: 0.5, repeatCount: nil, timingFunction: kCAMediaTimingFunctionEaseIn)
+        let ani2Path = Animate.baseAnimationWithKeyPath("path", fromValue: drawPathSize(CGSize(width: 30 , height: 30) ,cornerRadius: 15), toValue: drawPathSize(CGSize(width: 60 , height: 60) ,cornerRadius: 30), duration: ani2Duration, repeatCount: nil, timingFunction: kCAMediaTimingFunctionEaseIn)
         
         //动画二 - 不透明度
-        let ani2Opacity = Animate.baseAnimationWithKeyPath("opacity", fromValue: NSNumber(value: 1), toValue: NSNumber(value: 0.1), duration: 0.5, repeatCount: 0, timingFunction: kCAMediaTimingFunctionEaseIn)
+        let ani2Opacity = Animate.baseAnimationWithKeyPath("opacity", fromValue: NSNumber(value: 1), toValue: NSNumber(value: 0.1), duration: ani2Duration, repeatCount: 0, timingFunction: kCAMediaTimingFunctionEaseIn)
         
         //动画二 - 边框
-        let ani2LineWidth = Animate.baseAnimationWithKeyPath("lineWidth", fromValue: nil, toValue: 15, duration: 0.5, repeatCount: nil, timingFunction: nil)
+        let ani2LineWidth = Animate.baseAnimationWithKeyPath("lineWidth", fromValue: nil, toValue: 15, duration: ani2Duration, repeatCount: nil, timingFunction: nil)
         
         //group
         let ani2Group = CAAnimationGroup()
@@ -94,7 +99,7 @@ class PQButton: UIButton {
     
     fileprivate func addAnimation3(){
         layer.addSublayer(aniLayer3)
-        let ani3Path = Animate.baseAnimationWithKeyPath("path", fromValue: drawPathSize(CGSize(width: 20 , height: bounds.height) , cornerRadius: bounds.height * 0.5), toValue: drawPathSize(bounds.size , cornerRadius: bounds.height * 0.5), duration: 0.4, repeatCount: nil, timingFunction: nil)
+        let ani3Path = Animate.baseAnimationWithKeyPath("path", fromValue: drawPathSize(CGSize(width: 20 , height: bounds.height) , cornerRadius: bounds.height * 0.5), toValue: drawPathSize(bounds.size , cornerRadius: bounds.height * 0.5), duration: ani2Duration, repeatCount: nil, timingFunction: nil)
         ani3Path.isRemovedOnCompletion = false
         ani3Path.delegate = self
         aniLayer3.add(ani3Path, forKey: ani3)

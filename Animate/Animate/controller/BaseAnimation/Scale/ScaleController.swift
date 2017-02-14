@@ -34,7 +34,6 @@ class ScaleController: UIViewController {
         let scaleYAnimate = Animate.baseAnimationWithKeyPath("transform.scale.y", fromValue: nil, toValue: 1.5, duration: 1.5, repeatCount: Float.infinity, timingFunction: nil)
         scaleYAnimate.autoreverses = true
         imgView3.layer.add(scaleYAnimate, forKey: "transform.scale.y")
-        
     }
 
 }

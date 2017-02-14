@@ -64,6 +64,7 @@ class ChangeController: UIViewController {
         let shadowAnimate = Animate.baseAnimationWithKeyPath("shadowOpacity", fromValue: 0, toValue: 0.8, duration: 0.5, repeatCount: Float.infinity, timingFunction: nil)
         shadowAnimate.autoreverses = true
         shadow.layer.add(shadowAnimate, forKey: "shadowOpacity")
+
     }
 
 }

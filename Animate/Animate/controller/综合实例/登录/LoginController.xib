@@ -64,6 +64,16 @@
                     </constraints>
                     <state key="normal" title="登录"/>
                 </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aD9-Dx-Z0d">
+                    <rect key="frame" x="67.5" y="403" width="239" height="29"/>
+                    <segments>
+                        <segment title="Transfrom动画"/>
+                        <segment title="CAAnimation动画"/>
+                    </segments>
+                    <connections>
+                        <action selector="chioseAnimationType:" destination="-1" eventType="valueChanged" id="ja9-yB-g84"/>
+                    </connections>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -71,6 +81,7 @@
                 <constraint firstAttribute="trailing" secondItem="Ylm-dl-1pD" secondAttribute="trailing" constant="40" id="45d-Ux-Toi"/>
                 <constraint firstItem="oLN-kM-pZ9" firstAttribute="top" secondItem="Vtx-7c-xWB" secondAttribute="bottom" constant="9" id="4r1-gv-IMA"/>
                 <constraint firstItem="2lM-7s-7vP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4z7-fe-KiK"/>
+                <constraint firstItem="2lM-7s-7vP" firstAttribute="top" secondItem="aD9-Dx-Z0d" secondAttribute="bottom" constant="21" id="5O5-wm-21N"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="centerX" secondItem="2lM-7s-7vP" secondAttribute="centerX" id="BDS-4p-RmI"/>
                 <constraint firstAttribute="bottom" secondItem="2lM-7s-7vP" secondAttribute="bottom" constant="175" id="EUi-no-Twl"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="width" secondItem="2lM-7s-7vP" secondAttribute="width" id="HPR-EW-Rcb"/>
@@ -83,6 +94,7 @@
                 <constraint firstItem="oLN-kM-pZ9" firstAttribute="height" secondItem="pIE-mK-8Ec" secondAttribute="height" id="ZT0-xu-h8K"/>
                 <constraint firstItem="pIE-mK-8Ec" firstAttribute="centerX" secondItem="2lM-7s-7vP" secondAttribute="centerX" id="dSH-pk-zB7"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="height" secondItem="2lM-7s-7vP" secondAttribute="height" id="hED-JU-hbJ"/>
+                <constraint firstItem="aD9-Dx-Z0d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hFn-Lx-GVZ"/>
                 <constraint firstItem="Vtx-7c-xWB" firstAttribute="top" secondItem="pIE-mK-8Ec" secondAttribute="bottom" constant="33" id="iLt-4u-TK1"/>
                 <constraint firstItem="2lM-7s-7vP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uEK-rj-v1h"/>
             </constraints>
